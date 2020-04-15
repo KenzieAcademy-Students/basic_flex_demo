@@ -1,0 +1,113 @@
+body {
+    background-color: brown;
+}
+
+h1 {
+    text-align: center;
+    color: white
+}
+
+.container {
+    background-color: black;
+    width: 500px;
+    height: 400px;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.items {
+    width: 100px;
+    height: 100px;
+    border: 5px solid white;
+}
+
+.item1 {
+    background-color: blue;
+}
+
+.item2 {
+    background-color: red;
+}
+
+.item3 {
+    background-color: yellow;
+}
+
+/* Flex has a Main Axis
+The default axis is "row" or "left to right"*/
+.basic_flex {
+    display: flex;
+}
+
+/* justify-content
+justifies the Main Axis
+default is flex-start */
+.justify_end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.justify_center{
+    display: flex;
+    justify-content: center;
+}
+
+.justify_between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.justify_around {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* align-items
+aligns the Cross Axis
+the Cross Axis is perpendicular to the Main Axis
+the default Cross Axis is "column" or "top to bottom"
+default is flex-start
+Justify -> Main Axis
+Align -> Cross Axis */
+.align_end {
+    display: flex;
+    align-items: flex-end;
+}
+
+.align_center {
+    display: flex;
+    align-items: center;
+}
+
+.justify_around_align_center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* flex-direction
+modifies the Main Axis
+Main Axis is still "row"
+Cross Axis is still "column" */
+.direction_row_reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* Changing the flex direction changes the Main/Cross Axis
+Main Axis is now "column"
+Cross Axis is now "row" */
+.direction_column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* if the Main Axis is "column"
+then justify-content Justifies "column" now
+and align-items Aligns "row" */
+.column_justify_between_align_end {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
